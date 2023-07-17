@@ -4,6 +4,9 @@ import React from 'react';
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card"
 import { Input } from "@/components/ui/input";
 import {Button} from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
+
+
 export default function Home() {
   return ( 
     <div className="max-w-screen-md mx-auto">
@@ -23,14 +26,32 @@ export default function Home() {
             <CardTitle> MiniSaty</CardTitle>
             <CardDescription>Using Vercel SDK to create MiniSaty</CardDescription>
           </CardHeader>
-          <CardContent>
-            <p>Mensagens</p>
-            <CardFooter>
-              Form
-            </CardFooter>
+          <CardContent className="space-y-3">
+          <div className="flex gap-3 text-sm">
+            <Avatar>
+              <AvatarFallback>DF</AvatarFallback>
+              <AvatarImage src = "../favicon-32x32.png"/>
+            </Avatar>
+            <p className="leading-relaxed">
+              <span className = "block front-bold">You</span>
+              Hello i'm you :)
+           </p>
+          </div>
+          <div className="flex gap-3 text-sm">
+            <Avatar>
+              <AvatarFallback>DF</AvatarFallback>
+              <AvatarImage src = "../favicon-32x32.png"/>
+            </Avatar>
+            <p className="leading-relaxed">
+              <span className = "block front-bold">You</span>
+              Hello i'm you :)
+           </p>
+          </div>            
+          </CardContent>
+          <CardFooter className="space-x-2">
             <Input placeholder="Helloo! Como eu posso te ajudar?"/>
             <Button type="submit">Send</Button>
-          </CardContent>
+          </CardFooter>    
         </Card>
       </div>
       <h1 className="text-xl">Menu</h1>
