@@ -34,7 +34,7 @@ export default function Home() {
             </Avatar>
             <p className="leading-relaxed">
               <span className = "block front-bold">You</span>
-              Hello i'm you :)
+              Hello im you :)
            </p>
           </div>
           <div className="flex gap-3 text-sm">
@@ -44,7 +44,7 @@ export default function Home() {
             </Avatar>
             <p className="leading-relaxed">
               <span className = "block front-bold">You</span>
-              Hello i'm you :)
+              Hello im you :)
            </p>
           </div>            
           </CardContent>
