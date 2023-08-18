@@ -4,7 +4,7 @@ import React from 'react';
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card"
 import { Input } from "@/components/ui/input";
 import {Button} from "@/components/ui/button";
-import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex min-h-screen itens-center justify-center">
         <Card className="w-[440px] h-[700px] grid grid-rows-[min-content_1fr_min-content]"> 
           <CardHeader>
-            <CardTitle> MiniSaty</CardTitle>
+            <CardTitle> MiniSaty IA</CardTitle>
             <CardDescription>Using Vercel SDK to create MiniSaty</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
